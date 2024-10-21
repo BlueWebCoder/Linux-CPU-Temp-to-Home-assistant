@@ -1,5 +1,5 @@
 
-# Linux-Temp-to-Home-assistant
+# Linux-CPU-Temp-to-Home-assistant
 
 Ce projet permet de récupérer la température des machines distantes tournant sur des systèmes Linux (HiveOS, Proxmox, etc.) et d'envoyer ces informations vers Home Assistant.
 
