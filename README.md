@@ -25,18 +25,20 @@ echo drivetemp | sudo tee -a /etc/modules
 
 ### Étape 3 : Créer un script de récupération des températures
 
-Créez un fichier de script sur la machine distante pour récupérer les températures et les envoyer à Home Assistant :
+Téléchargez le fihier script de  récuoeration des températures afin de les envoyer à Home Assistant :
 
 ```bash
-nano ha_post_temp.sh
+sudo apt-update
+sudo apt install git
+git clone https://github.com/BlueWebCoder/Linux-Temp-to-Home-assistant.git && cd Linux-Temp-to-Home-assistant
 ```
 
-Collez le code nécessaire dans le fichier, puis enregistrez-le avec les commandes :
+Editez le script en remplaçant le jeton d'acces home assistant dans le script et personnalisez le serv_name si besoin :
 
 ```bash
-CTRL + S
-CTRL + X
+nano temp-to-ha.sh
 ```
+enregistrez + quitteé
 
 Rendez le script exécutable :
 
@@ -44,15 +46,7 @@ Rendez le script exécutable :
 chmod +x ha_post_temp.sh
 ```
 
-### Étape 4 : Vérifier le fonctionnement du script
-
-Exécutez manuellement le script pour vérifier qu'il fonctionne correctement :
-
-```bash
-/root/ha_post_temp.sh
-```
-
-### Étape 5 : Planifier l'exécution automatique du script
+### Étape 4 : Planifier l'exécution automatique du script
 
 Pour exécuter le script automatiquement toutes les minutes, éditez la crontab :
 
