@@ -38,7 +38,7 @@ Editez le script en remplaçant le jeton d'acces home assistant et l'ul de home-
 ```bash
 nano temp-to-ha.sh
 ```
-enregistrez + quitteé
+enregistrez + quittez
 
 Rendez le script exécutable :
 
