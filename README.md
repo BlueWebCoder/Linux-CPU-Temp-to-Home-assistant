@@ -73,7 +73,7 @@ systemctl status cron.service
 
 ## Étape 7 : Vérification dans Home Assistant
 
-Recherchez les entités suivantes dans Home Assistant pour vérifier les températures :
+Recherchez les entités suivantes dans Home Assistant pour vérifier les températures (hiveos ou le serv_name donné ):
 
 - `sensor.hiveos_cpu_temperature`
 
