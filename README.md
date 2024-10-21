@@ -46,6 +46,14 @@ Rendez le script exécutable :
 chmod +x ha_post_temp.sh
 ```
 
+Executer le scrpit afin de voir que les données remontent bien : 
+```bash
+./temp-to-ha.sh
+```
+
+![image](https://github.com/user-attachments/assets/237c7f0f-514f-4ca5-822a-4aa1979731eb)
+
+
 ### Étape 4 : Planifier l'exécution automatique du script
 
 Pour exécuter le script automatiquement toutes les minutes, éditez la crontab :
