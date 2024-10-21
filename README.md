@@ -5,7 +5,7 @@ Ce projet permet de récupérer la température des machines distantes tournant 
 
 ## Installation
 
-### Étape 1 : Installer lm-sensors sur la machine distante
+### Étape 1 : Installer lm-sensors sur la machine distante type HiveOs
 
 Exécutez les commandes suivantes pour installer lm-sensors et configurer le module :
 
@@ -23,7 +23,7 @@ echo drivetemp | sudo tee -a /etc/modules
 
 ![image](https://github.com/user-attachments/assets/0cd6ce80-a621-4830-aefa-d0f9126fc7c9)
 
-### Étape 3 : Créer un script de récupération des températures
+### Étape 3 : Créer un script de récupération des températures sur la machine distante type HiveOs
 
 Téléchargez le fihier script de  récuoeration des températures afin de les envoyer à Home Assistant :
 
