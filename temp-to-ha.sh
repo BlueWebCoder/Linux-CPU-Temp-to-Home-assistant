@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Home Assistant Settings
-url_base="http://192.168.1.174:8123/api/states"
-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI3ODE0MThhZWQ5ZDA0ZGQ4ODc4ZTcwNGY3MDRiMGQ2MyIsImlhdCI6MTcyOTQ5MTUxNywiZXhwIjoyMDQ0ODUxNTE3fQ.zOg6Gdzg2s6zhateCwFUiis8RI0Ri1jmAYxww1qi4og"
+url_base="http://192.168.1.XXXXX:8123/api/states"
+token="VOTRE_TOKEN_ICI"
 
 # Server name
 srv_name="hiveos"
