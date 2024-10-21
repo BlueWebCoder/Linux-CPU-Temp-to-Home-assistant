@@ -1,0 +1,1 @@
+# Linux-Temp-to-Home-assistant
