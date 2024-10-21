@@ -33,7 +33,7 @@ sudo apt install git
 git clone https://github.com/BlueWebCoder/Linux-Temp-to-Home-assistant.git && cd Linux-Temp-to-Home-assistant
 ```
 
-Editez le script en remplaçant le jeton d'acces home assistant dans le script et personnalisez le serv_name si besoin :
+Editez le script en remplaçant le jeton d'acces home assistant et l'ul de home-assistant dans le script .Personnalisez le serv_name si besoin :
 
 ```bash
 nano temp-to-ha.sh
