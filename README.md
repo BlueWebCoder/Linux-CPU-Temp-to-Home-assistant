@@ -76,6 +76,5 @@ systemctl status cron.service
 Recherchez les entités suivantes dans Home Assistant pour vérifier les températures :
 
 - `sensor.hiveos_cpu_temperature`
-- `sensor.hiveos_gpu_temperature`
 
 Vous pouvez maintenant surveiller les températures de votre machine distante directement depuis Home Assistant !
