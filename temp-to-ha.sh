@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Home Assistant Settings
-url_base="http://192.168.1.XXXXX:8123/api/states"
-token="VOTRE_TOKEN_ICI"
+url_base="http://192.168.1.xxxxx:8123/api/states"
+token="YOUR_TOKEN_HERE"
 
 # Server name
 srv_name="hiveos"
@@ -23,7 +23,7 @@ send_to_ha() {
 
   local url="${url_base}/${sensor_name}"
   local device_info="{\"identifiers\":${DEVICE_IDENTIFIERS},\"name\":\"${DEVICE_NAME}\",\"manufacturer\":\"${DEVICE_MANUFACTURER}\",\"model\":\"${DEVICE_MODEL}\"}"
-  local payload="{\"state\":\"${temperature}\",\"attributes\": {\"friendly_name\":\"${friendly_name}\",\"icon\":\"${icon}\",\"state_class\":\"measurement\",\"unit_of_measurement\":\"°C\",\"device_class>
+  local payload="{\"state\":\"${temperature}\",\"attributes\": {\"friendly_name\":\"${friendly_name}\",\"icon\":\"${icon}\",\"state_class\":\"measurement\",\"unit_of_measurement\":\"°C\",\"device_class\":\"temperature\",\"unique_id\":\"${unique_id}\",\"device\":${device_info}}}"
 
   curl -X POST -H "Authorization: Bearer ${token}" -H 'Content-type: application/json' --data "${payload}" "${url}"
 }
