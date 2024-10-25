@@ -28,9 +28,9 @@ echo drivetemp | sudo tee -a /etc/modules
 Téléchargez le fihier script de  récuoeration des températures afin de les envoyer à Home Assistant :
 
 ```bash
-sudo apt-update
+sudo apt update
 sudo apt install git
-git clone https://github.com/BlueWebCoder/Linux-CPU-Temp-to-Home-assistant.git && cd Linux-Temp-to-Home-assistant
+git clone https://github.com/BlueWebCoder/Linux-CPU-Temp-to-Home-assistant.git && cd Linux-CPU-Temp-to-Home-assistant
 ```
 
 Editez le script en remplaçant le jeton d'acces home assistant et l'ul de home-assistant dans le script .Personnalisez le serv_name si besoin :
@@ -43,7 +43,7 @@ enregistrez + quittez
 Rendez le script exécutable :
 
 ```bash
-chmod +x ha_post_temp.sh
+chmod +x temp-to-ha.sh
 ```
 
 Executer le scrpit afin de voir que les données remontent bien : 
@@ -65,7 +65,7 @@ crontab -e
 Ajoutez la ligne suivante pour exécuter le script une fois par minute :
 
 ```bash
-*/1 * * * * /root/ha_post_temp.sh
+*/1 * * * * /home/user/Linux-CPU-Temp-to-Home-assistant/temp-to-ha.sh
 ```
 
 Sauvegardez et quittez l'éditeur.
